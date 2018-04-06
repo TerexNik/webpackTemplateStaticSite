@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Akrobat-Black';
+    src: url(../fonts/Akrobat-Black.ttf);
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Akrobat-regular';
+    src: url(../fonts/Akrobat-Regular.ttf);
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@mixin akrobat-black() {
+    font-family: 'Akrobat-Black', serif;
+}
+

@@ -1,0 +1,15 @@
+// vars
+$white: #f6f6f6;
+$contrast-main: #43778e;
+$main: #ec5f61;
+
+// layout
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+
+// styles
+@import "sections/header";
+@import "sections/content";
+@import "sections/footer";
+

@@ -1,0 +1,59 @@
+@mixin box-shadow($params){
+  box-shadow: $params;
+  -webkit-box-shadow : $params;
+  -moz-box-shadow: $params;
+}
+
+@mixin inlineblock($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+@mixin block2-bg($path) {
+  background: linear-gradient(rgba(243, 245, 246, 0.3), rgba(243, 245, 246, 0.35)), url($path) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin full-size-bg($path) {
+  background: url($path) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin full-size-bg-parallax($path) {
+  background: url($path) no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin full-size-bg-with-triangle($path, $deg) {
+  background: linear-gradient($deg, rgba(243, 245, 246, 0.35) 0%, rgba(243, 245, 246, 0.35) 98%,
+                  $contrast-main 98%, $contrast-main 100%), url($path) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin paralax($path) {
+  background: url($path) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin display-flex($align: center) {
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  justify-content: center;
+  align-items: $align;
+}
